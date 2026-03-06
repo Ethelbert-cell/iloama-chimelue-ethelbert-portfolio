@@ -205,7 +205,7 @@ const LeftPanel = () => {
               <div className="flex items-center gap-4 text-white drop-shadow-lg">
                 <motion.a whileHover={{ scale: 1.1 }} href="https://github.com/Ethelbert-cell" target="_blank" rel="noopener noreferrer" className="p-2.5 border border-white/30 bg-black/20 backdrop-blur-md rounded-full hover:bg-white/10 transition-colors"><Github className="w-5 h-5" /></motion.a>
                 <motion.a whileHover={{ scale: 1.1 }} href="https://www.linkedin.com/in/chimelue-iloama-324401391" target="_blank" rel="noopener noreferrer" className="p-2.5 border border-white/30 bg-black/20 backdrop-blur-md rounded-full hover:bg-white/10 transition-colors"><Linkedin className="w-5 h-5" /></motion.a>
-                <motion.a whileHover={{ scale: 1.1 }} href="#" className="p-2.5 border border-white/30 bg-black/20 backdrop-blur-md rounded-full hover:bg-white/10 transition-colors" title="Download CV"><Download className="w-5 h-5" /></motion.a>
+                <motion.a whileHover={{ scale: 1.1 }} href="/iloama-chimelue-cv.pdf" download="Iloama-Chimelue-Ethelbert-CV.pdf" className="p-2.5 border border-white/30 bg-black/20 backdrop-blur-md rounded-full hover:bg-white/10 transition-colors" title="Download CV"><Download className="w-5 h-5" /></motion.a>
               </div>
             </div>
           </div>
