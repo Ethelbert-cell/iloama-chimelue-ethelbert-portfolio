@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iloama Chimelue Ethelbert - Resume</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'EB Garamond', serif;
+            line-height: 1.3;
+            color: #000;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        .page {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        /* ── Header banner ── */
+        header {
+            background-color: #9C7E6E;
+            color: #fff;
+            padding: 28px 36px 22px 36px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .header-name h1 {
+            font-size: 36pt;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 700;
+            line-height: 1.05;
+            color: #fff;
+        }
+
+        .header-contact {
+            text-align: right;
+            font-size: 10pt;
+            line-height: 1.8;
+            color: #fff;
+        }
+
+        .header-contact a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* ── Body layout ── */
+        .body-content {
+            display: flex;
+            padding: 0;
+        }
+
+        /* ── Left sidebar labels ── */
+        .sidebar {
+            width: 150px;
+            flex-shrink: 0;
+            padding: 30px 0 30px 36px;
+        }
+
+        .sidebar-label {
+            font-size: 8.5pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #555;
+            padding-top: 4px;
+        }
+
+        /* Spacers to align each sidebar label with corresponding section */
+        .sidebar-spacer {
+            display: block;
+        }
+
+        /* ── Main content ── */
+        .main {
+            flex: 1;
+            padding: 30px 36px 30px 20px;
+            border-left: 1px solid #ccc;
+        }
+
+        .section {
+            margin-bottom: 28px;
+        }
+
+        .section-sidebar {
+            display: flex;
+            gap: 0;
+            margin-bottom: 28px;
+        }
+
+        .section-sidebar-label {
+            width: 150px;
+            flex-shrink: 0;
+            padding-left: 36px;
+            padding-top: 2px;
+        }
+
+        .section-sidebar-label span {
+            font-size: 8.5pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #555;
+        }
+
+        .section-sidebar-content {
+            flex: 1;
+            padding-right: 36px;
+            border-left: 1px solid #ccc;
+            padding-left: 20px;
+        }
+
+        /* ── Item layout ── */
+        .item {
+            margin-bottom: 16px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            font-size: 10.5pt;
+        }
+
+        .item-subheader {
+            display: flex;
+            justify-content: space-between;
+            font-style: italic;
+            font-size: 10pt;
+            margin-bottom: 4px;
+            color: #333;
+        }
+
+        ul {
+            margin: 4px 0 0 0;
+            padding-left: 18px;
+        }
+
+        li {
+            font-size: 10pt;
+            margin-bottom: 3px;
+            text-align: justify;
+        }
+
+        /* ── Summary ── */
+        .summary-text {
+            font-size: 10.5pt;
+            margin: 0;
+            text-align: justify;
+            line-height: 1.5;
+        }
+
+        /* ── Skills two-column ── */
+        .skills-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2px 20px;
+            font-size: 10pt;
+        }
+
+        .skill-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 6px;
+        }
+
+        .skill-item::before {
+            content: "•";
+            flex-shrink: 0;
+        }
+
+        /* ── Websites section ── */
+        .links-list {
+            font-size: 10pt;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .links-list li {
+            margin-bottom: 4px;
+        }
+
+        .links-list li::before {
+            content: "• ";
+        }
+
+        .links-list a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .links-list a:hover {
+            text-decoration: underline;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+                margin: 0;
+            }
+
+            .page {
+                max-width: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+
+        <!-- ══ HEADER ══ -->
+        <header>
+            <div class="header-name">
+                <h1>Chimelue<br>Iloama</h1>
+            </div>
+            <div class="header-contact">
+                chimelueethelbert@gmail.com<br>
+                +234 814 734 6845<br>
+                Abuja, FCT, Nigeria
+            </div>
+        </header>
+
+        <!-- ══ SUMMARY ══ -->
+        <div class="section-sidebar">
+            <div class="section-sidebar-label">
+                <span>Summary</span>
+            </div>
+            <div class="section-sidebar-content">
+                <p class="summary-text">
+                    Passionate Software Engineer and Full-Stack Developer with over 2 years of hands-on experience
+                    building scalable web applications and intuitive user interfaces. Skilled in transforming
+                    innovative ideas into well-designed, functional digital products that deliver great user
+                    experiences. Adept at bridging the gap between design and engineering — with a strong
+                    foundation in both front-end and back-end development as well as UI/UX design and creative
+                    media production.
+                </p>
+            </div>
+        </div>
+
+        <!-- ══ SKILLS ══ -->
+        <div class="section-sidebar">
+            <div class="section-sidebar-label">
+                <span>Skills</span>
+            </div>
+            <div class="section-sidebar-content">
+                <div class="skills-columns">
+                    <div class="skill-item">React &amp; Next.js</div>
+                    <div class="skill-item">Software engineering</div>
+                    <div class="skill-item">Node.js &amp; Express</div>
+                    <div class="skill-item">Version control (Git &amp; GitHub)</div>
+                    <div class="skill-item">UI/UX design (Figma)</div>
+                    <div class="skill-item">Database management</div>
+                    <div class="skill-item">Full-stack web development</div>
+                    <div class="skill-item">Agile methodologies</div>
+                    <div class="skill-item">Docker &amp; containerisation</div>
+                    <div class="skill-item">Strategic thinking</div>
+                    <div class="skill-item">Video editing (After Effects)</div>
+                    <div class="skill-item">Business planning</div>
+                    <div class="skill-item">Photography &amp; videography</div>
+                    <div class="skill-item">Communication &amp; teamwork</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ══ EXPERIENCE ══ -->
+        <div class="section-sidebar">
+            <div class="section-sidebar-label">
+                <span>Experience</span>
+            </div>
+            <div class="section-sidebar-content">
+
+                <!-- Freelancer -->
+                <div class="item">
+                    <div class="item-header">
+                        <span>Freelancer</span>
+                        <span>March 2026 – Present</span>
+                    </div>
+                    <div class="item-subheader">
+                        <span>Independent — Multiple Clients</span>
+                        <span>Remote</span>
+                    </div>
+                    <ul>
+                        <li>Consult with clients to define project requirements and translate briefs into
+                            tailored digital solutions spanning web development, UI/UX design, and creative
+                            media production.</li>
+                        <li>Deliver end-to-end web applications — from architecture and back-end logic to
+                            polished, responsive front-end interfaces — ensuring quality and timely delivery.</li>
+                        <li>Manage multiple concurrent projects independently, maintaining clear client
+                            communication and adapting to evolving requirements throughout each engagement.</li>
+                        <li>Produce creative media assets including promotional graphics, motion content,
+                            and social media materials using Figma and Adobe After Effects.</li>
+                    </ul>
+                </div>
+
+                <!-- Media Team -->
+                <div class="item">
+                    <div class="item-header">
+                        <span>Media Team Member (Photography &amp; Videography)</span>
+                        <span>June 2023 – August 2025</span>
+                    </div>
+                    <div class="item-subheader">
+                        <span>Saint Johnmary Vianney Parish Catholic Church</span>
+                        <span>Kubwa, FCT</span>
+                    </div>
+                    <ul>
+                        <li>Captured and edited professional photographs and videos for weekly services,
+                            conferences, and special church events, ensuring high-quality visual output.</li>
+                        <li>Assisted in live-stream productions, managing real-time video coverage for
+                            in-person and online audiences.</li>
+                        <li>Performed video editing and colour correction for event highlights and
+                            promotional content using Adobe After Effects.</li>
+                        <li>Collaborated with the communications team to create engaging content for
+                            social media platforms and digital outreach.</li>
+                        <li>Maintained and operated DSLR cameras, tripods, and audio equipment for
+                            indoor and outdoor events.</li>
+                    </ul>
+                </div>
+
+                <!-- NIIT Student -->
+                <div class="item">
+                    <div class="item-header">
+                        <span>Student</span>
+                        <span>September 2023 – June 2025</span>
+                    </div>
+                    <div class="item-subheader">
+                        <span>NIIT Abuja</span>
+                        <span>Abuja, FCT</span>
+                    </div>
+                    <ul>
+                        <li>Completed coursework in programming, web development, databases, networking,
+                            and software engineering fundamentals.</li>
+                        <li>Developed academic projects to address practical problems using structured
+                            problem-solving approaches.</li>
+                        <li>Applied object-oriented programming concepts in programming assignments and
+                            classroom projects.</li>
+                        <li>Designed and implemented basic database systems using technologies such as
+                            PostgreSQL, MongoDB, and SQLite.</li>
+                        <li>Developed a chatbot prototype for a school library to assist users with
+                            basic inquiries and information access.</li>
+                        <li>Practiced debugging, testing, and improving code to enhance application
+                            functionality and performance.</li>
+                        <li>Collaborated on team-based projects using structured development practices
+                            inspired by Agile methodologies.</li>
+                        <li>Prepared technical documentation and project reports to clearly present
+                            project objectives, system design, and development processes.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ══ EDUCATION AND TRAINING ══ -->
+        <div class="section-sidebar">
+            <div class="section-sidebar-label">
+                <span>Education and<br>Training</span>
+            </div>
+            <div class="section-sidebar-content">
+
+                <div class="item">
+                    <div class="item-header">
+                        <span>Middlesex University Mauritius</span>
+                        <span>Expected July 2026</span>
+                    </div>
+                    <div class="item-subheader">
+                        <span>BSc (Hons) Information Technology</span>
+                        <span>Mauritius</span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <span>National Institute of Information Technology (NIIT) — Nigeria</span>
+                        <span>June 2025</span>
+                    </div>
+                    <div class="item-subheader">
+                        <span>Honors Diploma in Information Technology (Software Engineering)</span>
+                        <span>Abuja, FCT</span>
+                    </div>
+                    <ul>
+                        <li>Relevant Coursework: Web Development, UX/UI Design Principles, Database Systems,
+                            Networking, and Software Engineering.</li>
+                        <li>Projects &amp; Research: LibraLink — smart library management platform; Pulse-Mate —
+                            health monitoring system; TULOS — high-fashion e-commerce UI/UX design.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ══ WEBSITES & SOCIAL LINKS ══ -->
+        <div class="section-sidebar">
+            <div class="section-sidebar-label">
+                <span>Websites &amp;<br>Social Links</span>
+            </div>
+            <div class="section-sidebar-content">
+                <ul class="links-list">
+                    <li>
+                        <a href="https://www.linkedin.com/in/chimelue-iloama-324401391" target="_blank">
+                            linkedin.com/in/chimelue-iloama-324401391
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Ethelbert-cell" target="_blank">
+                            github.com/Ethelbert-cell
+                        </a>
+                    </li>
+                    <li>My Portfolio — <em>coming soon</em></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
